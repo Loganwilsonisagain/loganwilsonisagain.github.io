@@ -20,8 +20,37 @@
   <meta name="twitter:description" content="Design &amp; happiness">
   <meta name="twitter:title" content="The Feebles — Design &amp; happiness">
   <meta name="twitter:site" content="@lesfeebles">
-  <link rel="stylesheet" id="thefeebles-global-css" href="http://www.thefeebles.com/wp-content/themes/thefeebles/dist/css/min/global.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="thefeebles-global-css" href="jog.css" type="text/css" media="all">
+  <script>
+  	const firstName = 'susan';
+
+
+  </script>
   <style>
+  @media(min-width: 400px) {
+	.tab {opacity:0;}
+	#polished{opacity: 0;}
+}
+
+@media(min-width: 788px) {
+	.tab {opacity:0;}
+	#polished {opacity:0;}
+}
+@media(min-width: 995px) {
+	.tab {opacity:0;}
+	#polished {opacity:1;}
+}
+ @media(min-width: 1000px) {
+	.tab {opacity:1;}
+}
+  @font-face {
+    font-family: logieDistrict;
+    src: url(DistTh__.otf);
+}
+@font-face {
+    font-family: logieFont;
+    src: url(Gilroy-ExtraBold.otf);
+}
     .background--adidas-originals, .hover--adidas-originals::after {
       background-color: #0152fc;
     }
@@ -249,6 +278,110 @@
   width: 400px;
 }
 
+.perspective {
+  -webkit-perspective: 76em;
+          perspective: 76em;
+  -webkit-perspective-origin: 50% 50px;
+          perspective-origin: 50% 50px;
+  width: 97w; /* width:894px; --make it go right*/
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+
+.tab {
+	display: block;
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  background: pink;
+  right: 0;
+  line-height: 70px;
+  font-weight: 300;
+}
+.tab:nth-child(1) {
+  top: -5px;
+
+  background: #06D6A0;
+}
+.tab:nth-child(2) {
+  top: 69px;
+  background: #1B9AAA;
+}
+.tab:nth-child(3) {
+  top: 143px;
+  background: #EF476F;
+}
+
+.cube {
+
+  position: relative;
+  margin: 60px auto 0;
+  width: 600px;
+  height: 200px;
+  -webkit-transform-origin: 0 100px;
+          transform-origin: 0 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.tab-content {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+}
+.tab-content h1 {
+  font-size: 25px;
+  margin: 75px 0 10px;
+  font-weight: 300;
+}
+.tab-content p {
+  font-size: 12px;
+}
+.tab-content:nth-child(2) {
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+  background: #1B9AAA;
+}
+.tab-content:nth-child(1) {
+  -webkit-transform: rotateX(-270deg) translateY(-100px);
+          transform: rotateX(-270deg) translateY(-100px);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  background: #06D6A0;
+}
+.tab-content:nth-child(3) {
+  -webkit-transform: rotateX(-90deg) translateY(100px);
+          transform: rotateX(-90deg) translateY(100px);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #EF476F;
+}
+
+#tab-top:checked ~ .cube {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+#tab-front:checked ~ .cube {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+#tab-bottom:checked ~ .cube {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
 
 
 
@@ -306,7 +439,7 @@
                                   <li class="col-xs-12 col-sm-6 col-md-12 projects__list__item text-xs-center text-md-left float-md-none js-projects-item color--ville-dorvault" data-index="5" data-color="#f19c9d" data-pagination="06" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
                                     <a href="http://www.amomexchange.com/" data-namespace="single-project">
                                       <div class="projects__list__item__image__wrapper visible-xs-block visible-sm-block"></div>
-                                      <div class="projects__list__item__content projects__list__item__content_surtitled"> <span class="display-xs-block display-md-inline-block hover--ville-dorvault">Kids</span><small class="project__surtitle display-xs-block display-md-inline lead color-gray">`${numberKids}` </small></div>
+                                      <div id='polished' class="projects__list__item__content projects__list__item__content_surtitled"> <span class="display-xs-block display-md-inline-block hover--ville-dorvault">Kids</span><small class="project__surtitle display-xs-block display-md-inline lead color-gray">`${numberKids}` </small></div>
                                     </a>
                                   </li>
                                   <li class="col-xs-12 col-sm-6 col-md-12 projects__list__item text-xs-center text-md-left float-md-none js-projects-item color--olow-fallwinter-2016 active" style="visibility: inherit; opacity: 1;">
@@ -342,14 +475,29 @@
                               </ul>
  
  </div>
- <div class="row" style="float:right;margin-left: 4px;">
+ <!--<div class="row" style="float:right;margin-left: 4px;">
 <div class="grid" style="margin-left:0;float: right;">
   <div class="col fluid">
     <img src="https://d13yacurqjgara.cloudfront.net/users/373338/screenshots/1968797/gambit_dribbble.png" alt="roker" class="img-responsive">
    
   </div>
 </div>
-</div>
+</div>-->
+ <label class="tab" for="tab-top" style="color:#fff;"> <bold>&nbsp; &nbsp;OPEN</bold></label>
+  <label class="tab" for="tab-front" style="color:#fff;"> <bold>&nbsp;  &nbsp;CLOSE</bold></label>
+ 
+  <input type="radio" name="tabs" id="tab-top">
+  <input type="radio" name="tabs" id="tab-front">
+ 
+  <div class="cube">
+    <div class="tab-content" style="border: 3px solid; border-color: inherit;background: transparent; ">
+    <p id='wings' style="font-family: logieFont;padding:14px 25px 14px 25px;font-size: 24px; letter-spacing: 3px;"> Welcome, Check it out</p>
+     </div>
+    
 <p style="margin-left: 40px;">anybody? please see me and hello world me</p>
+
+<script>
+	
+</script>
 </body>
-<</html>
+</html>
