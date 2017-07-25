@@ -1,0 +1,666 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="">
+    <meta name="googlebot" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avant-Garde Website</title>
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
+    <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	
+    <link href="CSS/index.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.ico">
+ 
+   
+    <link rel="stylesheet" type="text/css" href="menuResp.css" />
+<style>
+
+
+@font-face {
+    font-family: logieDistrict;
+    src: url(DistTh__.otf);
+} 
+@font-face {
+    font-family: logieFont;
+    src: url(Gilroy-ExtraBold.otf) ;
+}
+#mobsmall {font-size: 1.3em;}
+@media only screen and (max-width: 500px) {
+  
+        #headlg { display: block; margin: auto;justify-content: center;text-align: center;
+    }
+      #mobsmall { font-size: 0.5em;
+    }
+
+}
+	
+}
+@media only screen and (max-width: 900px) {
+  
+        #mobsmall { font-size:0.5em; 
+}
+	
+}
+html, body {
+	background-color:#fff;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  padding:0;
+  margin: 0;
+}
+body {background-image: url(https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/M9mWSz5fjPV1NTG/homebg.jpg);
+  background-repeat: none;
+  background-size: cover !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;}
+  #block1 { color: #fff;
+   height:100%;
+   width: 100%;
+   padding-bottom:110%;
+   display:block;
+   }
+  
+  #block2 {color: #fff; height:20%;width: 100%; background-color: #54DEFD;padding-bottom:100%;display:block;}
+#block3 {color: #fff; height:20%;width: 100%; background-color: #cee;padding-bottom:100%;display:block;}
+#block4 {color: #fff; height:20%;width: 100%; background-color: #00BD9D;padding-bottom:100%;display:block;}
+#block5 {color: #fff; height:20%;width: 100%; background-color: #8BD7D2;padding-bottom:100%;display:block;}
+#logoPic {width:30em;margin:auto;padding:44px 7px 5px 7px;}
+ /*start social tabs */
+         ul.social-network {
+                        list-style: none;
+                        display: inline;
+                        margin-top:2px;
+                        margin-left:0; !important;
+                        padding: 0;
+                        size:auto;
+                        
+                    }
+                    ul.social-network li {
+                        display: inline;
+                        margin: 0 5px;
+                    }
+                    /* footer social icons */
+                    .social-network a.icoRss:hover {
+                        background-color: #F56505;
+                    }
+                    .social-network a.icoFacebook:hover {
+                        background-color:#3B5998;
+                    }
+                    .social-network a.icoTwitter:hover {
+                        background-color:#33ccff;
+                    }
+                    .social-network a.icoGoogle:hover {
+                        background-color:#BD3518;
+                    }
+                    .social-network a.icoVimeo:hover {
+                        background-color:#0590B8;
+                    }
+                    .social-network a.icoLinkedin:hover {
+                        background-color:#007bb7;
+                    }
+                    .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+                    .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+                        color:#fff;
+                    }
+                    a.socialIcon:hover, .socialHoverClass {
+                        color:#44BCDD;
+                    }
+                    .social-circle li a {
+                        display:inline-block;
+                        position:relative;
+                        margin:0 auto 0 auto;
+                        -moz-border-radius:50%;
+                        -webkit-border-radius:50%;
+                        border-radius:50%;
+                        text-align:center;
+                        width: 50px;
+                        height: 50px;
+                        font-size:20px;
+                    }
+                    .social-circle li i {
+                        margin:0;
+                        line-height:50px;
+                        text-align: center;
+                    }
+                    .social-circle li a:hover {
+                        -moz-transform: rotate(360deg);
+                        -webkit-transform: rotate(360deg);
+                        -ms--transform: rotate(360deg);
+                        transform: rotate(360deg);
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        transition: all 0.2s;
+                    }
+                    .social-circle i {
+                        color: #fff;
+                        -webkit-transition: all 0.8s;
+                        -moz-transition: all 0.8s;
+                        -o-transition: all 0.8s;
+                        -ms-transition: all 0.8s;
+                        transition: all 0.8s;
+                    }
+                    a {
+                     background:transparent;;   
+                    }
+                   
+	
+	#cont {margin-top:-5px;width: 100%;padding-top:0;border:5px 5px 7px 5px solid #fff;}
+	#boat {padding-top:0;padding-left:25%;padding-right: 25%;}
+	#colm {text-align: center; max-width: 100%;max-height:100%; background:none;}
+#slide-1 {width:100%;
+height:950px;
+  background-image: url("https://j.gifs.com/g5E8KZ.gif");
+  background-position: center center; 
+  background-repeat: none;
+  background-size: cover !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  opacity:1;
+}
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    
+}
+@media screen and (max-width: 640px){
+	html, body {overflow:scroll;}
+	#logoPic {padding-top:0;
+		margin-top:-3px;}
+	  ul.social-network li {
+                        display: inline;
+                        margin-left:-15px;
+		  margin-top:-10px;
+                    }
+
+   #opaque {opacity: 0.7;}
+
+
+    .nav {
+		display:none;
+  width: 100%;
+  position: fixed;
+  
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+ background-color:#ccc;
+
+}
+.nav li {
+	  display:none;
+	text-align:center;
+	text-justify:center;
+	font-family:logieDistrict;
+    list-style: none;
+    display: inline-block;
+}
+.nav .link {
+	display:none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing:3px;
+  font-family: Sans-serif;
+  color: #000;
+  margin: 0 10px;
+  opacity:0.55;
+}
+.nav .link:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing:3px;
+  font-family: Sans-serif;
+  color: #000;
+  margin: 0 10px;
+  opacity:1;
+}
+	.menuHider {display:block;}
+	
+}
+.menuHider {display:none;}
+#new { text-align: center;
+font-size: 1.5em;
+color: #fff; 
+display: none;}
+.backGif {
+  background-image: url("https://media.giphy.com/media/iTXehJiMjtDFK/giphy.gif") ;/*https://media.giphy.com/media/l2SpXooHKDShYUyeQ/giphy.gif*/
+  height: 210px;
+  background-position:bottom;
+  background-size:cover;
+  
+  
+  
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color:transparent;
+  font-size:1.8em;
+}
+.properBtn {/*border: 0.075em solid #F90; border-radius:5px;*/ margin-top:5%;font-size:65%;background:transparent;padding:5px 7px 5px 7px;color:#f90;} 
+@font-face {
+    font-family: logieDistrict;
+    src: url(DistTh__.otf);
+}
+@font-face {
+    font-family: logieFont;
+    src: url(Gilroy-ExtraBold.otf);
+}
+.moveRight {margin-top:10%;margin-left:8%;
+text-align:left;}
+#headlg {font-size:420%;
+	font-family:logieFont !important;}
+#robo {font-size:420%;margin-top:-2.7%;margin-right:0%;}
+#robo2 {font-size: 220%;margin-top:1.2%;margin-left:10%;}
+#hur {padding:0 1em 0 0.03em; color: #f00 !important;margin-left:2em; margin-top:2.7em; display:inline; float:left;}
+#okl {margin-top:34px;color:#fff;opacity:1;text-align:left}
+#directBottom {font-size:0.6em; text-shadow:0.01em 0.01em #fff;margin-top:3%; margin-left:9%;}
+#firstNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;padding-right:3%}
+.logiNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;min-width:10.21%;}
+#noNavR {opacity:0; min-width:5%;background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;}
+.logiNav:hover {opacity: 0.7;color:#ccc;}
+#noNavRL {opacity:1; min-width:6%;background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:left;margin-left:9.70%;}
+#noNavRL:hover {background:#f90 !important;}
+#:hover{-moz-transform: rotate(-360deg);
+                        -webkit-transform: rotate(-360deg);
+                        -ms-transform: rotate(-360deg);
+                        transform: rotate(-360deg);
+                        -webkit-transition: all 0.6s;
+                        -moz-transition: all 0.6s;
+                        -o-transition: all 0.6s;
+                        -ms-transition: all 0.6s;
+                        transition: all 0.6s;}
+#okl:hover {color:#020D1f !important;}
+.intime {display:inline-block;margin-left:-1; float:left;padding:0 7px 0 0;font-size:1.75em; font-family:logieDistrict;}
+  
+  
+  .nav {
+  width: 100%;
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  z-index: 30;
+ background:transparent;
+ 
+}
+.nav li {text-align:center;
+text-justify:center;
+font-family:logieDistrict;
+  list-style: none;
+  display: inline-block;
+}
+.nav .link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing:2px;
+  font-family: Sans-serif;
+  color:#000 ;
+  margin: 0 10px;
+  opacity:1;
+}
+.nav .link:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing:2px;
+  font-family: Sans-serif;
+  color: #FD334f;
+  margin: 0 10px;
+  opacity:1;
+}
+	
+	
+input {
+  position: fixed;
+  opacity: 0;
+}
+label {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+label::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:transparent;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger::before,
+label .burger .bar, label .burger::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: white;
+  content: '';
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger .bar {
+  top: 44%;
+}
+label .burger::before {
+  top: 0;
+  transform-origin: top left;
+}
+label .burger::after {
+  bottom: 0;
+  transform-origin: bottom left;
+}
+input:focus + label .burger,
+label:hover .burger {
+  opacity: .75;
+}
+nav {
+	font-family:logieDistrict;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 25em;
+  background-color:#333;
+  background: -webkit-linear-gradient(-90deg, #111, #000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #111, #000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #111, #000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #111, #000); /* Standard syntax */
+  opacity:0.7;
+  content: '';
+  transform: skewX(15deg) translateX(-100%);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (min-width: 40em) {
+  nav::before {
+    width: 40em;
+  }
+}
+nav a {
+  margin: .5em 0;
+  padding: .2em 2em;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transform: translateX(-100%);
+  transition: color .15s, transform .5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav a:nth-child(1) {
+  transition-delay: 0s, 100ms;
+}
+nav a:nth-child(2) {
+  transition-delay: 0s, 150ms;
+}
+nav a:nth-child(3) {
+  transition-delay: 0s, 200ms;
+}
+nav a:nth-child(4) {
+  transition-delay: 0s, 250ms;
+}
+nav a:nth-child(5) {
+  transition-delay: 0s, 300ms;
+}
+nav a:nth-child(6) {
+  transition-delay: 0s, 350ms;
+}
+nav a:hover, nav a:focus {
+  color: #FD554f;
+}
+main {
+  overflow: hidden;
+}
+main .content {
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  will-change: transform, filter;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+[id="navcheck"]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  width: 141.42%;
+}
+[id="navcheck"]:checked + label .burger::before {
+  transform: rotate(45deg) translateY(-50%);
+}
+[id="navcheck"]:checked + label .burger::after {
+  transform: rotate(-45deg) translateY(50%);
+}
+[id="navcheck"]:checked + label .burger .bar {
+  transform: scale(0.1);
+}
+[id="navcheck"]:checked ~ nav {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ nav::before {
+  transform: skewX(15deg) translateX(0);
+}
+[id="navcheck"]:checked ~ nav a {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ main .content {
+  transform: translateX(3em);
+  transform-origin: left center;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  /* menu :S */
+}
+/* helper */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* misc */
+body {
+  overflow-x: hidden;
+  background-color:#000;
+  
+  color: white;
+  font: 1em/1.4 "lato";
+}
+main {
+  background-color:#000;
+  background: -webkit-linear-gradient(-90deg, #000, #000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #000, #000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #000, #222); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #000, #222); /* Standard syntax */
+  padding: 5% 0;
+}
+article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+@media (min-width: 60em) {
+  article {
+    width: 50%;
+  }
+}
+h1 {
+  font: 2.5em/1.4;
+  font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+<input class='input' type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+</label>
+<nav id="menu">
+
+	 <a href="#block1" class="link">Home </a>
+    <a href="films.html" class="link">Films</a>
+    <a href="packages.html" class="link">Packages</a>
+    <a href="vxfreel.html" class="link">VXF Reel</a>
+    <a href="photography.html" class="link">Photography</a>
+    <a href="contact.html" class="link">Contact</a>
+</nav>
+<!-- slide1 -->
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+    <div class="blocks  menuHider" id="block1" onClick="baoBao();">
+    <input class='input menuHider' type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger menuHider">
+		<span class="bar menuHider">
+			<span class="visuallyhidden menuHider">Menu</span>
+		</span>
+	</span>
+</label>
+<nav id="menu" class="menuHider"
+	<a href="#">Home</a>
+	 <a href="films.html" class="link">Films</a>
+    <a href="packages.html" class="link">Packages</a>
+    <a href="vxfreel.html" class="link">VXF Reel</a>
+    <a href="photography.html" class="link">Photography</a>
+    <a href="contact.html" class="link">Contact</a>
+</nav>
+
+	  <div class="container" >
+  <div class="row">
+  <div class="col-lg-12">
+ <div style="position:fixed;top:0;margin-left:-300px;background-color: #fff; opacity: 0.7;width: 250vw;height: 200px;"></div>
+    <div class="blocks  nadaBlocka" id="block1" onClick="baoBao();">
+     
+   
+  <!--logo-->
+  
+  <p class="moveRight" id="headlg" style="font-family:logieFont;display: none;">  <img id='logoPic' style="margin-left: 15px;" class='img-responsive' src="Photos/Other/agvlogoheader.png"/> </p>
+            
+          
+            
+           
+           
+            <div class="properBtn" style="font-family: logieFont;font-size:0.85em;margin-left:9.99%;opacity:0;"  href="#"> <span id="okl">LEARN MORE<!--function blastOff--></div> <div id='hur'>__</div>
+           
+           <p id='directBottom' style="font-family:logieDistrict; font-size:1.6em;margin-left:8.21%;padding-bottom:16px;opacity:0;"> Navigate Menu To Discover </p>
+           
+           
+         
+           
+           
+             <ul class="social-network social-circle" style="display:inline-block;margin-top: 66.25vh;margin-left:7px;float:right;">
+                        
+                        <li><a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" class="icoFacebook" title="Facebook"><i class="fa  fa-vimeo-square"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-linkedin "></i></a></li>
+
+                        <li><a href="https://twitter.com/YOUNGROE59" class="icoTwitter" title="Twitter"><i class="fa fa-instagram"></i></a></li>
+                     
+                        
+                    </ul>
+  </div>
+  <div class="nav" >
+   
+    <img id='logoPic' style="margin-left: 15px;" class='img-responsive' src="Photos/Other/agvlogoheader.png"/>
+  
+ <ul id="opaque" style="text-align: center;margin-left: 23vw;">
+  <div style="background:transparent;width: 3vw;"></div>
+
+    <li> <a href="#" class="link">Home </a></li>
+    <li><a href="https://www.eventbrite.com" class="link">Films</a></li>
+    <li><a href="index3.html" class="link">Packages</a></li>
+    <li><a href="vxfreel.html" class="link">VXF Reel</a></li>
+    <li><a href="photography.html" class="link">Photography</a></li>
+    <li><a href="contact.html" class="link">Contact</a></li>
+  </ul>
+</div>
+  
+   
+  
+  
+  
+    </div>     
+  </div>
+  </div>
+    
+
+
+</div>
+</div>
+</div>
+</div>
+</body>
