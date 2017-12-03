@@ -9772,8 +9772,8 @@ body:before {
   position: fixed;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  z-index: 0;
-  background: url('') no-repeat center center fixed;
+  z-index: -1;
+  background: url(#) no-repeat center center fixed;
   background-size: cover;
   -webkit-filter: sepia(0.5);
           filter: sepia(0.5);
@@ -10044,21 +10044,18 @@ nav a {
 /* ### Start Header ### */
 
 header {
-  
-  color: #FFF;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-}
-
-header .overlay {
-  min-height: 100vh;
   background: url("https://images.unsplash.com/photo-1419658776233-a6a982d3ebae?auto=format&fit=crop&w=1027&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 50px 0;
+  color: #FFF;
+}
+
+header .overlay {
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  padding: 50px 0
 }
 
 header .center-vh {
